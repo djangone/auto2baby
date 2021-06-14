@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+	<link href="css/style.css" rel="stylesheet">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  
+	<header class="navbar navbar-expand-md  bd-navbar">
+  <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
+    <a class="navbar-brand p-0 me-2" href="/" aria-label="Bootstrap">
+      <img src="img/logo.png" class="logo"/>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+</svg>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="bdNavbar">
+      <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2 active" aria-current="page" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="/docs/5.0/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Docs</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="/docs/5.0/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://icons.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');" target="_blank" rel="noopener">Icons</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://themes.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Themes</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://blog.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
+        </li>
+      </ul>
+
+      <hr class="d-md-none text-white-50">
+
+      <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://github.com/twbs" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 512 499.36" role="img"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"></path></svg>
+            <small class="d-md-none ms-2">I</small>
+          </a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 512 416.32" role="img"><title>Twitter</title><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"></path></svg>
+            <small class="d-md-none ms-2">Connexion</small>
+          </a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+			<a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-3" href="/docs/5.0/getting-started/download/">Inscription</a>
+			<a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-3" href="/docs/5.0/getting-started/download/">Connexion</a>
+		</li>
+      </ul>
+
+      
+    </div>
+  </nav>
+</header>
+  
+ <div class="wrapper">
+ 
+ <section id="slider-home">
+	<div class="container">
+	
+		<div class="search-content">
+		<div class="search-title">
+			<h1>  Tout ce dont vous avez besoin sur <span>AUTO2BABY</span> </h1>
+		</div>
+			<div class="search-form">
+			<div class="row">
+				<div class="col"><select class="form-control">
+				  <option title="Marque">Hot Dog, Fries and a Soda</option>
+				  <option title="Combo 2">Burger, Shake and a Smile</option>
+				  <option title="Combo 3">Sugar, Spice and all things nice</option>
+				</select></div>
+				<div class="col">
+				<select class="form-control">
+				  <option title="Modèle">Hot Dog, Fries and a Soda</option>
+				  <option title="Combo 2">Burger, Shake and a Smile</option>
+				  <option title="Combo 3">Sugar, Spice and all things nice</option>
+				</select></div>
+				<div class="col">
+				<select class="form-control">
+				  <option title="Année">Hot Dog, Fries and a Soda</option>
+				  <option title="Combo 2">Burger, Shake and a Smile</option>
+				  <option title="Combo 3">Sugar, Spice and all things nice</option>
+				</select>
+				</div>
+				<div class="col">
+				<select class="form-control">
+				  <option title="Carburant">Hot Dog, Fries and a Soda</option>
+				  <option title="Combo 2">Burger, Shake and a Smile</option>
+				  <option title="Combo 3">Sugar, Spice and all things nice</option>
+				</select>
+				</div>
+				<div class="col">
+				<select class="form-control">
+				  <option title="Transmission">Hot Dog, Fries and a Soda</option>
+				  <option title="Combo 2">Burger, Shake and a Smile</option>
+				  <option title="Combo 3">Sugar, Spice and all things nice</option>
+				</select>
+				</div>
+				
+				<div class="col">
+				<button class="btn btn-primary">Rechercher</button>
+				</div>
+			</div>
+				
+				
+
+			</div>
+		</div>
+		
+	</div>
+ </section>
+ 
+ 
+ 
+ <section>
+	<div class="Container">
+	
+		<div class="text-center">
+			<h1><span>Véhicule</span> en vente</h1>
+		</div>
+		<div class="row">
+			<div class="col-lg-5"></div>
+			<div class="col-lg-7">
+				<div class="car-slide">
+					<div class="car-slide-nav">
+						
+						<div class="slide-tab-menu">
+							<span>Transport en commun</span> <span>Personnelles</span> <span>Poids lourds</span>
+						</div>
+						<div class="slide-tab-nav">
+							<span>></span> <span><</span>
+						</div>
+					</div>
+					
+					<div class="car-list">
+						<div class="car-item">
+							<div class="image-preview">
+								<img/>
+							</div>
+							<h3 class="title">Renault Scénic</h3>
+							<div class="item-option">
+								<span>Diésel</span>  <span>Automatique</span> <span>135 CH</span>
+							</div>
+							<div class="item-price">3 250 000 <span>FCFA</span></div>
+							<div class="item-link"><a>Plus de détails</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ </section>
+
+ </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://code.jquery.com/git/jquery-3.x-git.slim.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+<script type="text/javascript">
+	$('select').selectpicker();
+</script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
